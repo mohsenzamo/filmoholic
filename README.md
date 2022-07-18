@@ -1,5 +1,7 @@
 # filmoholic
 
+link : https://filmoholic.netlify.app/#/
+
 ## Project setup
 ```
 pnpm install
