@@ -1,0 +1,232 @@
+@font-face {
+  font-family: "RobotoCondensed-Bold";
+  src: url(../font/RobotoCondensed-Bold.ttf);
+}
+@font-face {
+  font-family: "RobotoCondensed-BoldItalic";
+  src: url(../font/RobotoCondensed-BoldItalic.ttf);
+}
+@font-face {
+  font-family: "RobotoCondensed-Italic";
+  src: url(../font/RobotoCondensed-Italic.ttf);
+}
+@font-face {
+  font-family: "RobotoCondensed-Light";
+  src: url(../font/RobotoCondensed-Light.ttf);
+}
+@font-face {
+  font-family: "RobotoCondensed-LightItalic";
+  src: url(../font/RobotoCondensed-LightItalic.ttf);
+}
+@font-face {
+  font-family: "RobotoCondensed-Regular";
+  src: url(../font/RobotoCondensed-Regular.ttf);
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+  .splide__arrow {
+    @apply !bg-lightP;
+  }
+
+  .movie_card {
+    height: 500px;
+    transition: all 0.4s;
+  }
+
+  .info_section {
+    background: linear-gradient(to right, #0d0d0c 50%, transparent 100%);
+  }
+
+  .blur_back {
+    background-position: -100% 10% !important;
+  }
+
+  .splide__pagination {
+    @apply !hidden;
+  }
+
+  .cards .card {
+    transition: 0.3s;
+  }
+
+  .cards .card figcaption {
+    transform: translateY(100%);
+    transition: 0.3s;
+  }
+
+  .cards .card:after {
+    content: "";
+    width: 200%;
+    top: -90%;
+    left: -20px;
+    transform: rotate(45deg);
+    background: linear-gradient(
+      to top,
+      transparent,
+      #fff 15%,
+      rgba(255, 255, 255, 0.5)
+    );
+    transition: 0.3s;
+  }
+
+  .cards .card:hover {
+    transform: translateY(-3px) scale(1.05) rotateX(15deg);
+  }
+
+  .cards .card:hover figcaption {
+    transform: none;
+  }
+
+  .cards .card:hover:after {
+    transform: rotate(25deg);
+    top: -40%;
+  }
+
+  .borderr {
+    transition: border 1s;
+  }
+
+  .card {
+    transition: background 0.8s;
+  }
+
+  .card0 {
+    background-size: 200px;
+  }
+
+  .card0:hover {
+    background-position: left center;
+    background-size: 300px;
+  }
+
+  .card0:hover .pAct {
+    opacity: 1;
+  }
+
+  .card0:hover .fa {
+    opacity: 1;
+  }
+
+  .pAct {
+    transition: opacity 1s;
+  }
+
+  .fa {
+    transition: opacity 1s;
+  }
+
+  ::-webkit-scrollbar {
+    @apply w-2 h-2;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply rounded-3xl bg-white;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-logo rounded-3xl border-2 border-logo;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-logo;
+  }
+  .cardList {
+    flex: 1;
+    flex-basis: 300px;
+    flex-grow: 0;
+    height: 310px;
+    width: 200px;
+    transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+  }
+
+  .cardimg {
+    transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+  }
+
+  .descriptions {
+    background-color: rgba(191, 149, 247, 0.7);
+    transition: all 0.7s ease-in-out;
+    box-sizing: border-box;
+    clip-path: circle(0% at 100% 100%);
+  }
+
+  .cardList:hover .descriptions {
+    left: 0px;
+    transition: all 0.7s ease-in-out;
+    clip-path: circle(75%);
+  }
+
+  .cardList:hover {
+    transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+    transform: scale(0.97);
+  }
+
+  .cardList:hover img {
+    transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+    transform: scale(1.6) rotate(20deg);
+    filter: blur(3px);
+  }
+
+  .cardList h1 {
+    letter-spacing: 1px;
+  }
+
+  .cardList p {
+    line-height: 20px;
+    height: 65%;
+  }
+
+  .cardList button {
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .borderr {
+    transition: border 1s;
+  }
+
+  .borderr:hover {
+    border: 1px solid #61539d;
+  }
+
+  .card {
+    transition: background 0.8s;
+  }
+
+  .card0 {
+    background-image: url("../logo/FF2.png");
+    background-size: 200px;
+  }
+
+  .card0:hover {
+    background-position: left center;
+    background-size: 300px;
+  }
+
+  .card0:hover .pAct {
+    opacity: 1;
+  }
+
+  .card0:hover .fa {
+    opacity: 1;
+  }
+
+  .pAct {
+    transition: opacity 1s;
+  }
+
+  .fa {
+    transition: opacity 1s;
+  }
+
+  .blur_back {
+    background-image: url("../logo/FF2.png");
+  }
+
+  .movie_card_list {
+    height: 560px;
+  }
+}
